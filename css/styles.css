@@ -13,6 +13,42 @@ body {
   color: #434455;
 }
 
+/* Utilities */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 2px solid red;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* Button */
 
 .button-pointer {
@@ -22,6 +58,8 @@ body {
 /* Design logo */
 
 .logo {
+  margin-right: 76px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -46,6 +84,7 @@ body {
 
 .hero {
   background: var(--second-title-background);
+  text-align: center;
 }
 
 .hero-title {
@@ -57,6 +96,9 @@ body {
 }
 
 .hero-button {
+  padding: 16px 32px;
+  margin-top: 48px;
+
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -75,7 +117,13 @@ body {
 
 /* Feature */
 
+.section.feature {
+  padding-bottom: 0;
+}
+
 .feature-title-three {
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
@@ -89,15 +137,37 @@ body {
   letter-spacing: 0.02em;
 }
 
+.feature-list {
+  display: flex;
+}
+
+.feature-list > .item {
+  width: calc((100%-72px) / 4);
+}
+
+.feature-list > .item:not(:last-child) {
+  margin-right: 24px;
+}
+
 /* Whar are we doing */
 
 .wawd-title {
+  margin-bottom: 72px;
+
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   color: var(--second-title-background);
   letter-spacing: 0.02em;
   text-transform: capitalize;
+}
+
+.wawd-list {
+  display: flex;
+}
+
+.wawd-list > .item:not(:last-child) {
+  margin-right: 24px;
 }
 
 /* Our Team */
@@ -147,16 +217,19 @@ body {
 
 /* Header */
 
+.nav {
+  display: flex;
+}
+
 .header {
+  display: flex;
+
   background: var(--primary-background);
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
+.header-flex {
+  display: flex;
+  align-items: center;
 }
 
 .list-link {
@@ -172,6 +245,10 @@ body {
   color: var(--focus-hover-color);
 }
 
+.list-nav > .item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .email-telephone {
   font-size: 16px;
   line-height: 24px;
@@ -185,7 +262,22 @@ body {
 }
 
 .address {
+  display: flex;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+
   font-style: normal;
+}
+
+.address-list > .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.list-nav {
+  display: flex;
 }
 
 /* Portfolio */
