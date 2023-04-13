@@ -404,11 +404,6 @@ img {
   flex-wrap: wrap;
 }
 
-.portfolio-photo {
-  width: calc((100%-48px) / 3);
-  text-align: center;
-}
-
 .portfolio-photo:not(:nth-child(3n)) {
   margin-right: 24px;
 }
@@ -441,6 +436,10 @@ img {
 
   border: 1px solid #e7e9fc;
   border-top: none;
+}
+
+.portfolio-link-photo {
+  width: calc((100%-48px) / 3);
 }
 
 .hidden {
